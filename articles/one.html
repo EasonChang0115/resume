@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>用 VuePress 搭建自我風格的部落格 | 我的VuePress</title>
+    <meta name="description" content="從vuepress一出來就開始關注這個小傢伙的成長，雖然官網的建置步驟已經很完善了，更何況還有中文版。這裡我會告訴大家怎麼修改樣式內容，甚至不靠base template也能造出自己風格的樣式內容">
+    <link rel="icon" href="/favicon.ico">
+    
+    <link rel="preload" href="/assets/css/0.styles.eefb1fa4.css" as="style"><link rel="preload" href="/assets/js/app.daede2b0.js" as="script"><link rel="preload" href="/assets/js/2.820dd297.js" as="script"><link rel="preload" href="/assets/js/8.d89c1d7e.js" as="script"><link rel="prefetch" href="/assets/js/10.147aac08.js"><link rel="prefetch" href="/assets/js/3.55ca3a4c.js"><link rel="prefetch" href="/assets/js/4.fe37a786.js"><link rel="prefetch" href="/assets/js/5.a43a4b2a.js"><link rel="prefetch" href="/assets/js/6.8bab5876.js"><link rel="prefetch" href="/assets/js/7.45b1b062.js"><link rel="prefetch" href="/assets/js/9.de80c5bf.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.eefb1fa4.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.png" alt="我的VuePress" class="logo"> <span class="site-name can-hide">我的VuePress</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">首頁</a></div><div class="nav-item"><a href="/articles/" class="nav-link router-link-active">頁面</a></div><div class="nav-item"><a href="/articles/test.html" class="nav-link">文章</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">下拉式選單</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/articles/項目一.html" class="nav-link">項目一</a></li><li class="dropdown-item"><!----> <a href="/articles/項目二.html" class="nav-link">項目二</a></li><li class="dropdown-item"><!----> <a href="https://test.io/test/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  項目三
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">首頁</a></div><div class="nav-item"><a href="/articles/" class="nav-link router-link-active">頁面</a></div><div class="nav-item"><a href="/articles/test.html" class="nav-link">文章</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">下拉式選單</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/articles/項目一.html" class="nav-link">項目一</a></li><li class="dropdown-item"><!----> <a href="/articles/項目二.html" class="nav-link">項目二</a></li><li class="dropdown-item"><!----> <a href="https://test.io/test/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  項目三
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>用 VuePress 搭建自我風格的部落格</span> <!----></p> <!----></section></li></ul> </aside> <main class="page"> <div class="content default"><p>從vuepress一出來就開始關注這個小傢伙的成長，雖然官網的建置步驟已經很完善了，更何況還有中文版。這裡我會告訴大家怎麼修改樣式內容，甚至不靠base template也能造出自己風格的樣式內容。</p> <h1 id="用-vuepress-搭建自我風格的部落格"><a href="#用-vuepress-搭建自我風格的部落格" aria-hidden="true" class="header-anchor">#</a> 用 VuePress 搭建自我風格的部落格</h1> <h3 id="簡單介紹一下vuepress是如何運作"><a href="#簡單介紹一下vuepress是如何運作" aria-hidden="true" class="header-anchor">#</a> 簡單介紹一下Vuepress是如何運作</h3> <p>背後運作的原理其實就跟Nuxt差不多，只是他比Nuxt更輕便。完全是為了產生靜態網站而生的一套Vue的建立系統。當然你也可以自己擴展成動態網站，只是不太建議而已。
+Vuepress後面就自我搭建了vue、vue-router、webpack等，完全符合現在我們Vue使用者的開發模式。並且自帶SSR的功能，只要在需要的FrontMatter設置meta 就可以完成SEO最基本的需求了。</p> <h4 id="特色"><a href="#特色" aria-hidden="true" class="header-anchor">#</a> 特色:</h4> <ol><li>markdown 中可以用Vue相關語法，甚至可以放入Vue Component。</li> <li>支援PWA，若網站更新也能及時通知client重刷頁面。</li> <li>GA 相關設定，只要提供 Google Analytics ID就會可以把GA植入我們的網站囉。</li></ol> <h3 id="基本建立"><a href="#基本建立" aria-hidden="true" class="header-anchor">#</a> 基本建立</h3> <ul><li>node 版本請大於8以上</li> <li>用 yarn 或 npm 都可以，這裡我統一用 npm 安裝所需的工具。</li> <li>開發環境就依個人喜好自我建立了。</li></ul> <p>那我們就開始囉!!💪 🎉</p> <hr> <h4 id="步驟一"><a href="#步驟一" aria-hidden="true" class="header-anchor">#</a> 步驟一</h4> <p>全局安裝(建議) vuepress 或在 project 裡面安裝都可以。</p> <div class="language-shell= line-numbers-mode"><pre class="language-text"><code>npm install -g vuepress
+// 或
+npm install vuepress
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><hr> <h4 id="步驟二"><a href="#步驟二" aria-hidden="true" class="header-anchor">#</a> 步驟二</h4> <p>新建並進入 project，若是直接在 project 裡面安裝的朋友可以跳過這個步驟。</p> <div class="language-shell= line-numbers-mode"><pre class="language-text"><code>mkdir vuepressproject
+cd vuepressproject
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><hr> <h4 id="步驟三"><a href="#步驟三" aria-hidden="true" class="header-anchor">#</a> 步驟三</h4> <p>初始化專案</p> <div class="language-shell= line-numbers-mode"><pre class="language-text"><code>npm init
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>接者在 package.json 加一些指令，大致上會長這樣。</p> <div class="language-json= line-numbers-mode"><pre class="language-text"><code>{
+  &quot;name&quot;: &quot;vuepressproject&quot;,
+  &quot;version&quot;: &quot;1.0.0&quot;,
+  &quot;description&quot;: &quot;用 VuePress 搭建自我風格的部落格&quot;,
+  &quot;main&quot;: &quot;index.js&quot;,
+  &quot;scripts&quot;: {
+    &quot;dev&quot;: &quot;vuepress dev docs&quot;,
+    &quot;build&quot;: &quot;vuepress build docs&quot;
+  },
+  &quot;author&quot;: &quot;author&quot;,
+  &quot;license&quot;: &quot;MIT&quot;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><p>其中scripts，dev使開發時會執行的指令，build是打包專案所需得指令，兩者皆指向docs這個資料夾。</p> <hr> <h4 id="步驟四"><a href="#步驟四" aria-hidden="true" class="header-anchor">#</a> 步驟四</h4> <p>產生相應專案資料夾結構</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>vuepressproject
+├─── docs
+│   ├── README.md
+│   ├── articles/
+│   └── .vuepress
+│       ├── dist/
+│       ├── public/
+│       └── config.js
+└── package.json
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><ol><li>docs： dev 指令或 build 會解析的資料夾，若更名的話，相對應的指令須修改，做為根目錄。</li> <li>README .md：這個md就是首頁的相關內容，作為根目錄下的index.html</li> <li>articles/: 放置所有文章的地方，router 會產生相對的路徑。若欲新增多個 articles2/ 也會可以。</li> <li>dist/：為打包編譯後的檔案放置的地方。</li> <li>public/：放置靜態檔的地方(圖片或css)，打包或開發下會作為根目錄來訪問。</li> <li>config.js：為整個vuepress的基本配置，之後裡面的內容都可以在更新主題的時候訪問到。(關鍵字: $site)</li></ol> <hr> <h4 id="步驟五"><a href="#步驟五" aria-hidden="true" class="header-anchor">#</a> 步驟五</h4> <p>config.js vuepress 專案配置。這邊可以在<a href="https://vuepress.vuejs.org/zh/config/#%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE" target="_blank" rel="noopener noreferrer">官網<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>裡面查到所有可以用的設定，當然我們也可以依照需求自己新增設定的內容。這邊簡單列出必須用到的設定。</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">// config.js</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  base<span class="token punctuation">:</span> <span class="token string">'/'</span><span class="token punctuation">,</span> <span class="token comment">// 部署到DNS下的路徑</span>
+  <span class="token comment">// locales: {}, // 多語支持 下面會額外說明</span>
+  title<span class="token punctuation">:</span> <span class="token string">'VuePress'</span><span class="token punctuation">,</span> <span class="token comment">// 網站的標題</span>
+  description<span class="token punctuation">:</span> <span class="token string">'用 VuePress 搭建自我風格的部落格'</span><span class="token punctuation">,</span> <span class="token comment">// 網站的描述 會以meta渲染到當前的頁面中</span>
+  serviceWorker<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">// 輕PWA 會緩存訪問過的頁面 用於離線瀏覽(若需要 可以在 public 生成 Manifest 和 icons)</span>
+  ga<span class="token punctuation">:</span> <span class="token string">'UA-123456789-0'</span><span class="token punctuation">,</span> <span class="token comment">// Google Analytics ID</span>
+  port<span class="token punctuation">:</span> <span class="token string">'8000'</span><span class="token punctuation">,</span> <span class="token comment">// 開發指定的Port。</span>
+  dist<span class="token punctuation">:</span> <span class="token string">'.vuepress/dist'</span><span class="token punctuation">,</span> <span class="token comment">// build 後輸出的目錄 預設為 .vuepress/dist</span>
+  head<span class="token punctuation">:</span> <span class="token punctuation">[</span> <span class="token comment">// 會在每頁 HTML &lt;head&gt; 產生相對應的標籤 </span>
+    <span class="token punctuation">[</span><span class="token string">'link'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> rel<span class="token punctuation">:</span> <span class="token string">'icon'</span><span class="token punctuation">,</span> href<span class="token punctuation">:</span> <span class="token string">'/favicon.ico'</span> <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  sidebarDepth<span class="token punctuation">:</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token comment">// 側邊欄的層數</span>
+  sidebar<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">// 是否開起側邊攔(預設為true)</span>
+  themeConfig<span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token operator">...</span><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token comment">// 個人化設定，在修改主題的時候也可以加入所需的相關參數。</span>
+  markdown<span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token operator">...</span><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token comment">// mardown 相關設定 </span>
+<span class="token punctuation">}</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br></div></div><blockquote><p>注意</p></blockquote> <ol><li>sidebar 也可以在所需的md頁面中，frontmatter作設定。</li> <li>themeConfig、markdown 皆可以寫成另一個 module 在 require 近來。</li></ol> <hr> <h4 id="步驟六"><a href="#步驟六" aria-hidden="true" class="header-anchor">#</a> 步驟六</h4> <p>主題相關設定，<a href="https://vuepress.vuejs.org/zh/default-theme-config/" target="_blank" rel="noopener noreferrer">官網<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>提供相當詳細的說明。</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">// themeConfig.js</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  logo<span class="token punctuation">:</span> <span class="token string">'/logo.png'</span><span class="token punctuation">,</span>
+  lastUpdated<span class="token punctuation">:</span> <span class="token string">'最後更新時間'</span><span class="token punctuation">,</span> <span class="token comment">// 若有設置，會在該頁面(md)產生一個git提交的時間戳。</span>
+  nav<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span> text<span class="token punctuation">:</span> <span class="token string">'首頁'</span><span class="token punctuation">,</span> link<span class="token punctuation">:</span> <span class="token string">'/'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span> text<span class="token punctuation">:</span> <span class="token string">'頁面'</span><span class="token punctuation">,</span> link<span class="token punctuation">:</span> <span class="token string">'/articles/'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span> text<span class="token punctuation">:</span> <span class="token string">'文章'</span><span class="token punctuation">,</span> link<span class="token punctuation">:</span> <span class="token string">'/articles/test.html'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span> text<span class="token punctuation">:</span> <span class="token string">'下拉式選單'</span><span class="token punctuation">,</span> 
+      items<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span> text<span class="token punctuation">:</span> <span class="token string">'項目一'</span><span class="token punctuation">,</span> link<span class="token punctuation">:</span> <span class="token string">'/articles/項目一.html'</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span> text<span class="token punctuation">:</span> <span class="token string">'項目二'</span><span class="token punctuation">,</span> link<span class="token punctuation">:</span> <span class="token string">'/articles/項目二.html'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span> text<span class="token punctuation">:</span> <span class="token string">'項目三'</span><span class="token punctuation">,</span> link<span class="token punctuation">:</span> <span class="token string">'https://test.io/test/'</span><span class="token punctuation">}</span>
+      <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  sidebar<span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token operator">...</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br></div></div><blockquote><p>注意</p></blockquote> <ol><li>若連結為目錄的時候，/articles/ 需要再後面多加 / ，否則會404頁面。(若訪問目錄時，資料夾底下需要有一個README的md檔作為index.html)。</li> <li>若有提供items，則會視為一組下拉式選單。</li> <li>sidebar 提供了2種顯示方式以及是否顯示(config中設定)。若不想做設定也可以設定成auto，會依照頁面中md檔的h標籤作為目錄展開。</li></ol> <blockquote><p>sidebar顯示方式</p></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 資料夾結構
+docs
+├─ README.md
+├─ contact.md
+├─ about.md
+├─ articles/
+│  ├─ README.md
+│  ├─ one.md
+│  └─ two.md
+└─ anotherarticle/
+   ├─ README.md
+   ├─ three.md
+   └─ four.md
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><h5 id="分組的方式來顯示-可自行分組"><a href="#分組的方式來顯示-可自行分組" aria-hidden="true" class="header-anchor">#</a> 分組的方式來顯示(可自行分組)</h5> <div class="language-js line-numbers-mode"><pre class="language-js"><code>sidebar<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    title<span class="token punctuation">:</span> <span class="token string">'Group 1'</span><span class="token punctuation">,</span> <span class="token comment">// 顯示在側邊欄的分組名稱</span>
+    collapsable<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    children<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+      <span class="token string">'/articles/'</span><span class="token punctuation">,</span>
+      <span class="token string">'/articles/one.html'</span><span class="token punctuation">,</span>
+      <span class="token string">'/anotherarticle/four.html'</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    title<span class="token punctuation">:</span> <span class="token string">'Group 2'</span><span class="token punctuation">,</span>
+    children<span class="token punctuation">:</span> <span class="token punctuation">[</span> <span class="token comment">/* ... */</span> <span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">]</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><h5 id="依照路由的方式來顯示"><a href="#依照路由的方式來顯示" aria-hidden="true" class="header-anchor">#</a> 依照路由的方式來顯示</h5> <div class="language-js line-numbers-mode"><pre class="language-js"><code>sidebar<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+  <span class="token string">'/articles/'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    <span class="token string">''</span><span class="token punctuation">,</span>     <span class="token comment">/* /foo/ */</span>
+    <span class="token string">'one'</span><span class="token punctuation">,</span>  <span class="token comment">/* /foo/one.html */</span>
+    <span class="token string">'two'</span>   <span class="token comment">/* /foo/two.html */</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token string">'/anotherarticle/'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    <span class="token string">''</span><span class="token punctuation">,</span>      <span class="token comment">/* /bar/ */</span>
+    <span class="token string">'three'</span><span class="token punctuation">,</span> <span class="token comment">/* /bar/three.html */</span>
+    <span class="token string">'four'</span>   <span class="token comment">/* /bar/four.html */</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token comment">// fallback 可以不用設置</span>
+  <span class="token string">'/'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    <span class="token string">''</span><span class="token punctuation">,</span>        <span class="token comment">/* / */</span>
+    <span class="token string">'contact'</span><span class="token punctuation">,</span> <span class="token comment">/* /contact.html */</span>
+    <span class="token string">'about'</span>    <span class="token comment">/* /about.html */</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div><blockquote><p>注意</p></blockquote> <ol><li>fallback 側邊欄需要最後定義。vuepress會歷遍所有的sidebar配置，來確保所有匹配都吻合。(若沒有批配到的路徑會在控制台出現warning)。</li></ol> <hr> <h4 id="步驟七"><a href="#步驟七" aria-hidden="true" class="header-anchor">#</a> 步驟七</h4> <p>markdown相關設置<a href="https://vuepress.vuejs.org/zh/guide/markdown.html#%E8%BF%9B%E9%98%B6%E9%85%8D%E7%BD%AE" target="_blank" rel="noopener noreferrer">官網<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>。</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">// markdownConfig.js</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  anchor<span class="token punctuation">:</span> <span class="token punctuation">{</span> permalink<span class="token punctuation">:</span> <span class="token boolean">true</span> <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token comment">// 文件內部錨點連結</span>
+  lineNumbers<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">// 程式碼區塊是否顯示行號</span>
+  toc<span class="token punctuation">:</span> <span class="token punctuation">{</span> includeLevel<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span> <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token comment">// 目錄顯示標題的層級</span>
+  <span class="token function-variable function">config</span><span class="token punctuation">:</span> <span class="token parameter">md</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span> <span class="token comment">// 外部插件設置：markdown-it-plugin</span>
+    md<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span><span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'markdown-it-xxx'</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">// 使用 xxx 插件</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><hr> <h4 id="步驟八"><a href="#步驟八" aria-hidden="true" class="header-anchor">#</a> 步驟八</h4> <p>首頁md檔頁面相關設置，在步驟四中，我們可以看到資料夾結構中，docs下有一個 README .md檔案，作為根目錄下的index.html也就是首頁。需要在markdown frontmatter中加入以下設定（<a href="https://vuepress.vuejs.org/zh/default-theme-config/#%E9%A6%96%E9%A1%B5" target="_blank" rel="noopener noreferrer">官網<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>提供）：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>---
+home: true // 設為首頁的md 若無則無法顯示首頁
+heroImage: /hero.png // 首頁的大圖
+actionText: 快速上手 → 
+actionLink: /zh/guide/
+features:
+- title: 简洁至上
+  details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
+- title: Vue驱动
+  details: 享受 Vue + webpack 的开发体验，在 Markdown 中使用 Vue 组件，同时可以使用 Vue 来开发自定义主题。
+- title: 高性能
+  details: VuePress 为每个页面预渲染生成静态的 HTML，同时在页面被加载的时候，将作为 SPA 运行。
+footer: MIT Licensed | Copyright © 2018-present Evan You
+---
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><p>這些設定可以依需要新增修改。</p> <hr> <h4 id="步驟九"><a href="#步驟九" aria-hidden="true" class="header-anchor">#</a> 步驟九</h4> <p>以上完成後，輸入</p> <div class="language-shell= line-numbers-mode"><pre class="language-text"><code>npm run dev
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>就可以在localhost:8000看到預設的樣式網站囉！！（port的設定可以在config中作修改）</p> <p>🎉🎉🎉</p> <p><img src="https://i.imgur.com/j87UmIl.png" alt=""></p> <hr></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"><!----><div class="gitalk-container"><div id="gitalk-container"></div></div></div></div>
+    <script src="/assets/js/app.daede2b0.js" defer></script><script src="/assets/js/2.820dd297.js" defer></script><script src="/assets/js/8.d89c1d7e.js" defer></script>
+  </body>
+</html>
